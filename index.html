@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Drive</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        Change Theme
+    </div>
+
+    <!-- File Upload Section -->
+    <div class="container">
+        <div class="upload-box">
+            <h2>Upload Image/Video</h2>
+            <input type="file" id="fileUpload" accept="image/*,video/*">
+            <button id="submitBtn">Submit</button>
+            <div id="result" class="result-text"></div> <!-- Display prediction result -->
+
+            <!-- Display uploaded image -->
+            <h3>Uploaded Image:</h3>
+            <div class="image-container">
+                <img id="uploadedImage" alt="Uploaded Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggestion Box Icon -->
+    <div class="suggestion-box-icon" id="suggestionIcon">
+        💬
+    </div>
+
+    <!-- Suggestion Box -->
+    <div class="suggestion-box" id="suggestionBox" style="display: none;">
+        <h3>Suggestions</h3>
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Phone Number" id="phone">
+        <textarea placeholder="Enter your feedback or tips here" id="feedback"></textarea>
+        <button id="submitSuggestion">Submit</button>
+        <p id="feedbackMessage"></p> <!-- Feedback message -->
+    </div>
+
+    <!-- Icons Section -->
+    <div class="icons-section">
+        <div class="icon">
+            <img src="{{ url_for('static', filename='alert.png') }}" alt="Emergency Alerts">
+            <p>Emergency Alerts</p>
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='voice guard.jpeg') }}" alt="Vocal Guard">
+            <p>Vocal Guard</p>
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='24:7.png') }}" alt="24/7 Support">
+            <p>24/7 Dedicated Support</p>
+        </div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

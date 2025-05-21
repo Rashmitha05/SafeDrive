@@ -1,0 +1,179 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0e2744, #d7eef9);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Enlarging text and elements */
+h2, h3 {
+    font-size: 32px;
+    color: #0e2744;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #0e2744;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Increased height */
+}
+
+.upload-box {
+    background: white;
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 600px; /* Increased width */
+}
+
+.upload-box h2 {
+    margin-bottom: 20px;
+}
+
+.upload-box input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 18px;  /* Larger input */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#submitBtn {
+    background-color: #0e2744;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button */
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #1a3b5e;
+}
+
+/* Suggestion Box Styles */
+.suggestion-box-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;  /* Enlarged icon */
+    cursor: pointer;
+}
+
+.suggestion-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;  /* Enlarged suggestion box */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.suggestion-box input,
+.suggestion-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;  /* Larger form inputs */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#submitSuggestion {
+    background-color: #0e2744;
+    color: white;
+    padding: 15px;
+    font-size: 18px; /* Larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitSuggestion:hover {
+    background-color: #1a3b5e;
+}
+
+/* Result Text Style */
+.result-text {
+    font-size: 24px; /* Increased text size for prediction result */
+    margin-top: 20px; /* Margin to separate from the previous content */
+    color: #0e2744; /* Color to match the theme */
+}
+
+/* Centering the uploaded image */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+#uploadedImage {
+    max-width: 100%; /* Responsive width */
+    display: none;    /* Initially hidden, shown after the image is uploaded */
+    border: 1px solid #ccc; /* Add a border to the image */
+    border-radius: 10px; /* Round the corners */
+}
+
+/* Icon Section */
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.icon {
+    text-align: center;
+    margin: 0 40px;  /* Increased spacing */
+}
+
+.icon img {
+    width: 80px;  /* Larger icon images */
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.icon p {
+    font-size: 22px;  /* Larger icon text */
+    color: #0e2744;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    background: #0e2744;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;  /* Larger toggle button */
+    border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background: #1a3b5e;
+}
